@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sandžak Kassel - Vaktija</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" href="Logo.png">
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta name="apple-mobile-web-app-title" content="Kassel Vaktija">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="main-display">
+            <div class="live-info">
+                <img src="Logo.png" alt="Logo" class="side-logo">
+
+                <div id="current-time" class="big-clock">00:00:00</div>
+
+                <div class="date-container">
+                    <div id="current-date">جاري التحميل...</div>
+                    <div id="hijri-date" style="color: #D4AF37;">جاري التحميل...</div>
+                </div>
+
+                <div id="next-prayer-box" class="countdown-container">
+                    <p class="next-label">الوقت المتبقي للصلاة:</p>
+                    <div id="countdown-timer" class="timer-digits">00:00:00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="prayer-list-container">
+            <header class="tv-header">
+                <h1 class="mosque-name">IGBD</h1>
+                <p class="subtitle">جماعة سانجق كاسل</p>
+            </header>
+
+            <div class="prayer-card">
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">الفجر</span>
+                        <span id="time-fajr" class="prayer-time">--:--</span>
+                    </div>
+                    <div class="iqamah-row">
+                        <span class="iq-label">الإقامة</span>
+                        <span id="time-iqamah-fajr" class="iq-time">05:15</span>
+                    </div>
+                </div>
+
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">الشروق</span>
+                        <span id="time-sunrise" class="prayer-time">--:--</span>
+                    </div>
+                </div>
+
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">الظهر</span>
+                        <span id="time-dhuhr" class="prayer-time">--:--</span>
+                    </div>
+                    <div class="iqamah-row">
+                        <span class="iq-label">الإقامة</span>
+                        <span id="time-iqamah-dhuhr" class="iq-time">--:--</span>
+                    </div>
+                </div>
+
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">العصر</span>
+                        <span id="time-asr" class="prayer-time">--:--</span>
+                    </div>
+                    <div class="iqamah-row">
+                        <span class="iq-label">الإقامة</span>
+                        <span id="time-iqamah-asr" class="iq-time">--:--</span>
+                    </div>
+                </div>
+
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">المغرب</span>
+                        <span id="time-maghrib" class="prayer-time">--:--</span>
+                    </div>
+                    <div class="iqamah-row">
+                        <span class="iq-label">الإقامة</span>
+                        <span id="time-maghrib-iqamah" class="iq-time">--:--</span>
+                    </div>
+                </div>
+
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">العشاء</span>
+                        <span id="time-isha" class="prayer-time">--:--</span>
+                    </div>
+                    <div class="iqamah-row">
+                        <span class="iq-label">الإقامة</span>
+                        <span id="time-iqamah-isha" class="iq-time">--:--</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jumuah-container">
+                <div class="prayer-row">
+                    <span class="prayer-name">صلاة الجمعة</span>
+                    <span id="time-jumuah" class="prayer-time">13:30</span>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <a href="index.html" class="lang-switch-link-green">تغيير اللغة </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sandžak Kassel - Vaktija</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" href="Logo.png">
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta name="apple-mobile-web-app-title" content="Kassel Vaktija">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="main-display">
+            <img src="Logo.png" class="side-logo" alt="Logo">
+            
+            <div class="live-info">
+                <div id="current-time" class="big-clock">00:00:00</div>
+                
+                
+                <div class="date-container">
+                    <div id="current-date">Lädt Datum...</div>
+                    <div id="hijri-date" style="color: #D4AF37;">Lädt Hijri...</div>
+                </div>
+
+                <div class="countdown-container">
+                    <p class="next-label">Slijedeći namaz za:</p>
+                    <div id="countdown-timer" class="timer-digits">00:00:00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="prayer-list-container">
+            <header class="tv-header">
+                <h1 class="mosque-name">IGBD</h1>
+                <p class="subtitle">Džemat Sandžak Kassel</p>
+            </header>
+
+            <div class="prayer-card">
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">Sabah / Fajr</span>
+                        <span id="time-fajr" class="prayer-time">--:--</span>
+                    </div>
+                    <div class="iqamah-row">
+                        <span class="iq-label">Ikamet</span>
+                        <span id="time-iqamah-fajr" class="iq-time">05:15</span>
+                    </div>
+                </div>
+
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">Sunce / Shuruq</span>
+                        <span id="time-sunrise" class="prayer-time">--:--</span>
+                    </div>
+                </div>
+
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">Podne / Dhuhr
+</span>
+                        <span id="time-dhuhr" class="prayer-time">--:--</span>
+                    </div>
+                    <div class="iqamah-row">
+                        <span class="iq-label">Ikamet</span>
+                        <span id="time-iqamah-dhuhr" class="iq-time">--:--</span>
+                    </div>
+                </div>
+
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">Ikindija / Asr</span>
+                        <span id="time-asr" class="prayer-time">--:--</span>
+                    </div>
+                    <div class="iqamah-row">
+                        <span class="iq-label">Ikamet</span>
+                        <span id="time-iqamah-asr" class="iq-time">--:--</span>
+                    </div>
+                </div>
+
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">Akšam / Maghrib</span>
+                        <span id="time-maghrib" class="prayer-time">--:--</span>
+                    </div>
+                    <div class="iqamah-row">
+                        <span class="iq-label">Ikamet</span>
+                        <span id="time-maghrib-iqamah" class="iq-time">--:--</span>
+                    </div>
+                </div>
+
+                <div class="prayer-group">
+                    <div class="prayer-row">
+                        <span class="prayer-name">Jacija / Isha</span>
+                        <span id="time-isha" class="prayer-time">--:--</span>
+                    </div>
+                    <div class="iqamah-row">
+                        <span class="iq-label">Ikamet</span>
+                        <span id="time-iqamah-isha" class="iq-time">--:--</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jumuah-container">
+                <div class="prayer-row">
+                    <span class="prayer-name">Džuma / Jumu'ah</span>
+                    <span id="time-jumuah" class="prayer-time">13:30</span>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <a href="index.html" class="lang-switch-link-green">Promijeni jezik</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
